@@ -3,7 +3,16 @@ import type { AtRules, RuleConfig } from 'stylelint-define-config'
 export type OrderOptions = RuleConfig<
   OrderPrimary[],
   {
-    unspecified?: ('top' | 'bottom' | 'ignore')[]
+    /**
+     * Default behavior is the same as `"ignore"`: an unspecified element can appear before or after any other property.
+     *
+     * With `"top"`, unspecified elements are expected before any specified properties.
+     *
+     * With `"bottom"`, unspecified properties are expected after any specified properties.
+     *
+     * @default 'ignore'
+     */
+    unspecified?: 'top' | 'bottom' | 'ignore'
   }
 >
 

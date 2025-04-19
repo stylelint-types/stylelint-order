@@ -7,10 +7,20 @@ export type PropertiesOrderOptions = RuleConfig<
      * These options only apply if you've defined your own array of properties.
      *
      * Default behavior is the same as `"ignore"`: an unspecified property can appear before or after any other property.
+     *
+     * @default 'ignore'
      */
     unspecified?: 'top' | 'bottom' | 'bottomAlphabetical' | 'ignore'
     /**
      * Default behavior does not enforce the presence of an empty line before an unspecified block of properties (`"ignore"`).
+     *
+     * If `"always"`, the unspecified group must be separated from other properties by an empty newline.
+     *
+     * If `"never"`, the unspecified group must have no empty lines separating it from other properties.
+     *
+     * For `"threshold"`, see the `emptyLineMinimumPropertyThreshold` for more information.
+     *
+     * If `emptyLineBeforeUnspecified` specified, regardless of it's value, if the first property in a rule is target of this option, that property would be forced to not have an empty line before it.
      */
     emptyLineBeforeUnspecified?: 'always' | 'never' | 'threshold'
     /**
@@ -28,7 +38,16 @@ interface PropertiesGroup {
    */
   properties: StandardPropertiesMap[]
   /**
-   *  If `"always"`, this group must be separated from other properties by an empty newline. If emptyLineBefore is never, the group must have no empty lines separating it from other properties. By default this property isn't set.
+   * If `"always"`, this group must be separated from other properties by an empty newline. If emptyLineBefore is never, the group must have no empty lines separating it from other properties. By default this property isn't set.
+   *
+   * Rule will check empty lines between properties _only_. However, shared-line comments ignored by rule. Shared-line comment is a comment on the same line as declaration before this comment.
+   *
+   * If `emptyLineBefore` specified, regardless of it's value, the first property in a rule would be forced to not have an empty line before it.
+   *
+   * For `threshold`, refer to the [`emptyLineMinimumPropertyThreshold` documentation](#emptyLineMinimumPropertyThreshold).
+   *
+   * If this option is not working as expected, make sure you don't have `declaration-empty-line-before` configured in a conflicting way in your Stylelint config or config you're extending (e. g. [`stylelint-config-standard`](https://github.com/stylelint/stylelint-config-standard)).
+   *
    */
   emptyLineBefore?: 'always' | 'never' | 'threshold'
   /**
