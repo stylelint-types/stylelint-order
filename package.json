@@ -26,14 +26,14 @@
   ],
   "exports": {
     ".": {
-      "types": "./lib/index.d.ts"
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
     },
     "./types": {
       "types": "./lib/types.d.ts"
-    },
-    "./package.json": "./package.json"
+    }
   },
-  "main": "lib/index.d.ts",
+  "main": "lib/index.js",
   "files": [
     "lib"
   ],
@@ -44,6 +44,8 @@
   },
   "scripts": {
     "lint": "eslint .",
+    "build": "tsup",
+    "prepublishOnly": "pnpm lint && pnpm build",
     "release:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release": "bumpp package.json --execute=\"pnpm release:changelog\" --commit --all --push --tag && pnpm publish --access public"
   },
@@ -64,6 +66,7 @@
     "stylelint": "^16.18.0",
     "stylelint-define-config": "^16.18.0",
     "stylelint-order": "^7.0.0",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   }
 }
