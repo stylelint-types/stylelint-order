@@ -1,3 +1,12 @@
+## [7.0.1](https://github.com/stylelint-types/stylelint-order/compare/v7.0.0...v7.0.1) (2026-01-16)
+
+
+### Features
+
+* support stylelint v17 ([1921fba](https://github.com/stylelint-types/stylelint-order/commit/1921fba64a93be9a63e8198dcbeae627e72aa03c))
+
+
+
 # [7.0.0](https://github.com/stylelint-types/stylelint-order/compare/v6.0.4...v7.0.0) (2025-04-19)
 
 
