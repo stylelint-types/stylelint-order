@@ -2,6 +2,7 @@ import type { RuleConfig, StandardPropertiesMap } from 'stylelint-define-config'
 
 export type PropertiesOrderOptions = RuleConfig<
   (StandardPropertiesMap | PropertiesGroup)[],
+  [],
   {
     /**
      * These options only apply if you've defined your own array of properties.

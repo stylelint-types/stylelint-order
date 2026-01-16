@@ -2,6 +2,7 @@ import type { AtRules, RuleConfig } from 'stylelint-define-config'
 
 export type OrderOptions = RuleConfig<
   OrderPrimary[],
+  [],
   {
     /**
      * Default behavior is the same as `"ignore"`: an unspecified element can appear before or after any other property.
