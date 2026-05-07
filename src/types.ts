@@ -1,3 +1,4 @@
+import type { CustomPropertiesAlphabeticalOrderOptions } from './rules/custom-properties-alphabetical-order'
 import type { OrderOptions } from './rules/order'
 import type { PropertiesAlphabeticalOrderOptions } from './rules/properties-alphabetical-order'
 import type { PropertiesOrderOptions } from './rules/properties-order'
@@ -15,6 +16,13 @@ export interface Extends {
 }
 
 export interface RuleOptions {
+  /**
+   * Specify the alphabetical order of custom properties (CSS variables) within declaration blocks.
+   *
+   * @see [CustomPropertiesAlphabeticalOrderOptions](https://github.com/hudochenkov/stylelint-order/blob/master/rules/custom-properties-alphabetical-order/README.md)
+   */
+  'order/CustomPropertiesAlphabeticalOrderOptions': CustomPropertiesAlphabeticalOrderOptions
+
   /**
    * Specify the order of content within declaration blocks.
    *
