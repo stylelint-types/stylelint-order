@@ -1,3 +1,10 @@
+# [8.1.0](https://github.com/stylelint-types/stylelint-order/compare/v7.0.1...v8.1.0) (2026-05-07)
+
+
+### Features
+
+* add `custom-properties-alphabetical-order` rule ([f259f19](https://github.com/stylelint-types/stylelint-order/commit/f259f1922f6855cc6453ed7c485bf0a43c6c071d))
+
 ## [7.0.1](https://github.com/stylelint-types/stylelint-order/compare/v7.0.0...v7.0.1) (2026-01-16)
 
 
