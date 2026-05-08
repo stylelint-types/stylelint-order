@@ -21,7 +21,7 @@ export interface RuleOptions {
    *
    * @see [CustomPropertiesAlphabeticalOrderOptions](https://github.com/hudochenkov/stylelint-order/blob/master/rules/custom-properties-alphabetical-order/README.md)
    */
-  'order/CustomPropertiesAlphabeticalOrderOptions': CustomPropertiesAlphabeticalOrderOptions
+  'order/custom-properties-alphabetical-order': CustomPropertiesAlphabeticalOrderOptions
 
   /**
    * Specify the order of content within declaration blocks.
