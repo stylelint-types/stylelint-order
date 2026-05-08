@@ -1,3 +1,10 @@
+## [8.1.1](https://github.com/stylelint-types/stylelint-order/compare/v8.1.0...v8.1.1) (2026-05-08)
+
+
+### Bug Fixes
+
+* fix typo ([f2ff014](https://github.com/stylelint-types/stylelint-order/commit/f2ff014ade29ac989fc4e4b5f26c98356b4ddcf3))
+
 # [8.1.0](https://github.com/stylelint-types/stylelint-order/compare/v7.0.1...v8.1.0) (2026-05-07)
 
 
