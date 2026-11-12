@@ -1,7 +1,7 @@
-import type { CustomPropertiesAlphabeticalOrderOptions } from './rules/custom-properties-alphabetical-order'
-import type { OrderOptions } from './rules/order'
-import type { PropertiesAlphabeticalOrderOptions } from './rules/properties-alphabetical-order'
-import type { PropertiesOrderOptions } from './rules/properties-order'
+import type { CustomPropertiesAlphabeticalOrderOptions } from './rules/custom-properties-alphabetical-order.js'
+import type { OrderOptions } from './rules/order.js'
+import type { PropertiesAlphabeticalOrderOptions } from './rules/properties-alphabetical-order.js'
+import type { PropertiesOrderOptions } from './rules/properties-order.js'
 
 export interface Plugins {
   'stylelint-order': void

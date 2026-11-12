@@ -19,7 +19,14 @@ export type OrderOptions = RuleConfig<
 
 type OrderPrimary = OrderKeyword | OrderRule | OrderAtRule
 
-type OrderKeyword = 'custom-properties' | 'dollar-variables' | 'at-variables' | 'declarations' | 'rules' | 'at-rules' | 'less-mixins'
+type OrderKeyword =
+  | 'custom-properties'
+  | 'dollar-variables'
+  | 'at-variables'
+  | 'declarations'
+  | 'rules'
+  | 'at-rules'
+  | 'less-mixins'
 
 interface OrderRule {
   type: 'rule'
