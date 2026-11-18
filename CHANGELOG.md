@@ -1,3 +1,9 @@
+## [8.1.4](https://github.com/stylelint-types/stylelint-order/compare/v8.1.3...v8.1.4) (2026-11-18)
+
+### Bug Fixes
+
+- export `types` ([48ea736](https://github.com/stylelint-types/stylelint-order/commit/48ea73673fb0ad2437116e0573a7ae02991c9e74))
+
 ## [8.1.3](https://github.com/stylelint-types/stylelint-order/compare/v8.1.1...v8.1.3) (2026-11-12)
 
 ### Features
